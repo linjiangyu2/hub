@@ -1,6 +1,5 @@
 Google Container Registry Mirror(Google Container Registry镜像加速)
 -------
-1
 
 Disclaimer/免责声明
 -------

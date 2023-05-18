@@ -1,9 +1,8 @@
 #!/bin/sh
 
-# 项目地址 https://github.com/linjiangyu/gcr.io_mirror
 k8s_img=$1
 mirror_img=$(echo ${k8s_img}|
-        sed 's/quay\.io/linjiangyu\/quay/g;s/ghcr\.io/linjiangyu\/ghcr/g;s/registry\.k8s\.io/linjiangyu\/google-containers/g;s/k8s\.gcr\.io/linjiangyu\/google-containers/g;s/gcr\.io/linjiangyu/g;s/\//\./g;s/ /\n/g;s/linjiangyu\./linjiangyu\//g' |
+        sed 's/quay\.io/anjia0532\/quay/g;s/ghcr\.io/anjia0532\/ghcr/g;s/registry\.k8s\.io/anjia0532\/google-containers/g;s/k8s\.gcr\.io/anjia0532\/google-containers/g;s/gcr\.io/anjia0532/g;s/\//\./g;s/ /\n/g;s/anjia0532\./anjia0532\//g' |
         uniq)
 
 if [ -x "$(command -v docker)" ]; then
